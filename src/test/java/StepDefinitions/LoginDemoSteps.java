@@ -32,12 +32,12 @@ public class LoginDemoSteps {
 	    
 	}
 
-	@When("user enters username and password")
-	public void user_enters_username_and_password() throws InterruptedException {
+	//* means can accept any values
+	@When("^user enters (.*) and (.*)$")
+	public void user_enters_username_and_password(String username, String password) throws InterruptedException {
 	    
-		driver.findElement(By.id("name")).sendKeys("Artem");
-		driver.findElement(By.id("password")).sendKeys("12345");
-		
+		driver.findElement(By.id("name")).sendKeys(username);
+		driver.findElement(By.id("password")).sendKeys(password);
 		
 		Thread.sleep(2000);
 		
@@ -55,7 +55,7 @@ public class LoginDemoSteps {
 		
 		driver.findElement(By.id("logout")).isDisplayed();
 		
-		Thread.sleep(2000);
+		
 		
 		driver.close();
 		driver.quit();
