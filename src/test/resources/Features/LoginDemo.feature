@@ -1,8 +1,10 @@
-Feature: Test login functionality
-  
-  
-  //need to change to outline if you have parameters being taken from a data table
+#Author artem
 
+@browserfeature
+Feature: Test login functionality
+    
+  //need to change to outline if you have parameters being taken from a data table
+  //@browsertest
   Scenario Outline: Check login is successful with valid credentials
     Given browser is open
     And user is on login page

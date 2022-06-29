@@ -1,4 +1,4 @@
-#Author: artempro123
+#Author: artem
 
 @smokeFeature
 Feature: feature to test login functionality

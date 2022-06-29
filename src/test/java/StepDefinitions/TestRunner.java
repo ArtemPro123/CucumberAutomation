@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 glue= {"StepDefinitions"},
 monochrome=true, 
 plugin = {"pretty", "html:target/HtmlReports.html"},
-tags="@smokeTest")
+tags="@browsertest")
 public class TestRunner {
 
 	
